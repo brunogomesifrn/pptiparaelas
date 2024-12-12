@@ -1,0 +1,380 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #fff0ff;
+    color: #101010;
+}
+.primary-bg-color{
+    background-color: #b57edc;
+}
+
+.dark-bg-color{
+    background-color: #101010;
+}
+/* COR NOTICIASD E GRUPOS*/
+.primary-color{
+    color: #050505;
+}
+
+.secondary-color{
+    color: #efd3ff;
+}
+
+.light-color{
+    color: #FCF5EB
+}
+
+/* LOGO DO PERFIL */
+
+img, svg{
+    width: 80px;
+}
+
+#logo-imagem{
+    padding: 5px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+
+/* NAVBAR */
+
+
+
+.nav-link:hover{
+    color: white;
+    border-radius: 30px;
+    background-color: #b57edc;
+}
+
+
+#navbar2{
+    background-color: rgb(255, 255, 255);
+}
+
+#navbar .navbar-nav{
+    flex-direction: row;
+    justify-content: end;
+}
+
+#navbar .navbar-nav li{
+    margin-left: 1em;
+}
+
+#navbar a, #navbar button{
+    border-radius: 30px;
+    color: #FFF;
+}
+
+#navbar li{
+    position: relative;
+}
+
+#navbar i{
+    font-size: 20px;
+}
+
+#navbar-brand{
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+#navbar-items{
+    justify-content: space-between;
+}
+
+@media (min-width:768px) {
+    #navbar-items{
+        min-width: 80%;
+        display: flex;
+    }
+
+}
+
+#search-form, #news-form{
+    width: 100%;
+    margin: 2em 0;
+}
+
+@media (min-width:768px) {
+    #search-form, #news-form{
+        width: 50%;
+        margin: 0;
+    }
+}
+/* CABEÇALHO*/
+#search-form, #news-form{
+    border: 2px solid #FFF;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+#search-form input, #news-form input{
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+#search-form input:focus,
+#news-form input:focus{
+    box-shadow: none;
+}
+ /*TEXTO DA BARRA DE PESQUISA*/
+#search-form input::placeholder,
+#news-form input::placeholder{
+    color: #FFF;
+} 
+
+/*Menu e Perfil*/
+
+#navbar.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    
+}
+
+#navbar .dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+/*COR DO ICONE "MENU E PERFIL"*/
+#navbar .dp-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    color: #dfb6fa;
+}
+
+#navbar .dp-menu ul li:hover ul {
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #000000;
+}
+
+/*Inicio do conteúdo*/
+
+.container-banner {
+    height: 400px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.container-banner {
+    height: 400px;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+    border: 1px solid #dfb6fa;
+}
+
+@media(max-width: 768px){
+    .container-banner {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 800px;
+        margin: 0 auto;
+        max-width: 70%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+        border: 1px solid #c79be4;
+    }
+}
+
+
+.text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.imagem {
+    flex: 1;
+    background: url('img/mulheres-na-tecnologia.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/* Noticias */
+
+#conteudo{
+    padding: 4em 0;
+}
+
+#conteudo .row{
+    margin: 0;
+}
+
+#conteudo .col-md-4{
+    padding: 0;
+}
+
+#title{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .title{
+        text-align: left;
+    }
+}
+
+.card{
+    text-align: center;
+    border-radius: 0;
+}
+
+.card img{
+    width: 140px;
+    margin: 2em auto ;
+}
+
+.card .card-text{
+    margin: 2em 0;
+    font-weight: bold;
+}
+
+.bnt{
+    background: transparent;
+    border-color: #c79be4;
+}
+
+.bnt:hover{
+    background: #4b1c71;
+    border-color: #cf42fa;
+}
+
+.localbotaomais {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    padding-left: 30px;
+    margin-top: 40px;
+    
+}
+
+a.button1 {
+    width: fit-content;
+    padding: 30px;
+    height: 15%;
+    background-color: #b57edc;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b57edc; /* Cor do botão */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* Borda arredondada */
+    font-size: 16px;
+    text-align: center;
+}
+
+a.button:hover, a.button1:hover {
+    background-color: #4b1c71; /* Cor ao passar o mouse */
+}
+
+.btn-outline-light:hover{
+    background-color: #4b1c71;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*fic em numeros*/
+
+.titulosecao {
+    font-size: 45px;
+    font-weight: bold;
+    width: auto;
+    padding-left: 50px;
+}
+
+.descricao {
+    width: 50%;
+    font-size: 20px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    margin: 0 10px; /* Espaçamento entre os quadros */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
+
+.icon {
+    font-size: 50px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .card {
+        margin: 10px 0;
+    }
+}
+/*rodapé*/
+
+#footer{
+    width: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 100px;
+    height: 80px;
+    background-color: #b57edc;
+    color: #FFF;
+}
+
